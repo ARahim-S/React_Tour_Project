@@ -1,10 +1,12 @@
 import "./App.scss";
+import Header from "./components/Header/Header";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome React</h1>
-      <p>Tour Project in here</p>
+      <Navbar />
+      <Header />
     </div>
   );
 }
