@@ -3,8 +3,13 @@ import "./CardItem.scss";
 const CardItem = ({ item }) => {
   return (
     <div className="card">
-      <p> {item.title}</p>
-      <img src={item.image} alt="" />
+      <div className="title">
+        <h2> {item.title}</h2>
+        <img src={item.image} alt="" />
+      </div>
+      <div className="card-over">
+        <p>{item.desc}</p>
+      </div>
     </div>
   );
 };

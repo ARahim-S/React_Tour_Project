@@ -1,4 +1,4 @@
-@import "../../sass/variables";
+@import "../../sass/variables", "../../sass/mixins";
 
 .navbar {
   width: 100%;
@@ -17,5 +17,17 @@
       background-color: $backgroundColor;
       color: black;
     }
+  }
+}
+
+@include media-xsm {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@include media-sm {
+  .navbar {
+    flex-direction: row;
   }
 }
